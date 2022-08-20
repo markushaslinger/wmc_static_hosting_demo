@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.content {
+    border-radius: 1em;
+    background: aquamarine;
+    padding: 1em;
+    font-family: Consolas, serif;
+    color: #000000;
+}
+
+button {
+    border-radius: 2em;
+    font-family: "Bradley Hand ITC", cursive;
+    font-size: 1.5em;
+    padding: 0.2em;
+    background-color: azure;
+    transition: background-color 3s, font-size 2s;
+}
+button:hover {
+    background-color: #87ff98;
+    font-size: 2em;
+}
