@@ -6,38 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
-    <title>Hello World</title>
+    <title>Stone, Paper & Scissors</title>
 </head>
 <body>
-    <button onclick="buttonClicked()">Click me!</button>
-    <div class="container">
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content" id="nameDiv">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
-        <div class="content">
-            Hello World!
-        </div>
+<div class="title">
+    Rock - Paper - Scissors
+</div>
+<div class="content">
+    <div id="gameState">
+        Game state
     </div>
+    <hr>
+    <div class="opponent-area" id="opponent-area">
+        Opponent
+    </div>
+    <hr>
+    <div id="results"></div>
+    <div class="buttons" id="buttons">
+        <img src="pics/rock.png" alt="rock" id="rockImg" onclick="selectChoice('rock')">
+        <img src="pics/paper.png" alt="paper" id="paperImg" onclick="selectChoice('paper')">
+        <img src="pics/scissors.png" alt="scissors" id="scissorsImg" onclick="selectChoice('scissors')">
+    </div>
+</div>
+<div>Educational Demo</div>
 </body>
 </html>

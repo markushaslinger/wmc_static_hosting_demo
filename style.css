@@ -1,28 +1,63 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em;
-    margin-top: 1em;
-    margin-bottom: 2em;
+body {
+    background-color: black;
+    color: white;
+    font-family: Consolas, serif;
+}
+.title {
+    font-size: 3.5em;
+    text-align: center;
+    width: 100%;
 }
 .content {
-    border-radius: 1em;
-    background: aquamarine;
-    padding: 1em;
-    font-family: Consolas, serif;
-    color: #000000;
+    border: 0.1em dotted white;
+    padding: 2em;
+    margin: 1em auto auto;
+    width: 80%;
+    text-align: center;
 }
-
-button {
-    border-radius: 2em;
-    font-family: "Bradley Hand ITC", cursive;
-    font-size: 1.5em;
-    padding: 0.2em;
-    background-color: azure;
-    transition: background-color 3s, font-size 2s;
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-button:hover {
-    background-color: #87ff98;
-    font-size: 2em;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    justify-content: center;
+}
+.buttons > img {
+    width: 15em;
+    height: 15em;
+    opacity: 60%;
+    transition: opacity 1s;
+}
+.buttons > img:hover {
+    opacity: 100%;
+}
+.opponent-area {
+    height: 15em;
+}
+.opponent-area > img {
+    width: 15em;
+    height: 15em;
+}
+.selected-img {
+    opacity: 100% !important;
+}
+.thinking {
+    animation:spin 4s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform:rotate(0deg) scale(100%);
+    }
+    50% {
+        transform:rotate(180deg) scale(50%);
+    }
+    100% {
+        transform:rotate(360deg) scale(100%);
+    }
+}
+#results {
+    font-size: 10em;
 }
