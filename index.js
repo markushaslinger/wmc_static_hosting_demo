@@ -64,7 +64,8 @@ function changeSelectedImage(choice, highlight) {
 function opponentTurn() {
     opponentDiv.innerHTML = '<img src="pics/question_mark.png" class="thinking" alt="opponent thinking">';
 
-    setTimeout(opponentChoice, 4000);
+    const thinkingDuration = Math.floor(Math.random() * (4000 - 1500)) + 1500;
+    setTimeout(opponentChoice, thinkingDuration);
 }
 
 function opponentChoice() {
@@ -99,9 +100,8 @@ function showResult(result, endState = false) {
     showDiv(buttonsDiv, false);
     showDiv(opponentDiv, false);
 
-    const thinkingDuration = Math.floor(Math.random() * (5000 - 1500)) + 1500;
     if (!endState) {
-        setTimeout(nextRound, thinkingDuration);
+        setTimeout(nextRound, 2750);
     }
 }
 
