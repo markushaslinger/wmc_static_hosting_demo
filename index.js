@@ -99,8 +99,9 @@ function showResult(result, endState = false) {
     showDiv(buttonsDiv, false);
     showDiv(opponentDiv, false);
 
+    const thinkingDuration = Math.floor(Math.random() * (5000 - 1500)) + 1500;
     if (!endState) {
-        setTimeout(nextRound, 4000);
+        setTimeout(nextRound, thinkingDuration);
     }
 }
 
